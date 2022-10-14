@@ -46,7 +46,8 @@ sudo systemctl restart libvirtd.service
 #### Edit the following configurations:
 Add your user to `/etc/libvirt/qemu.conf`. Otherwise, **QEMU** will give a permission denied error when trying to access local drives.
 
-Search for `user = "libvirt-qemu"` or `group = "libvirt-qemu"`, uncomment both entries and change `libvirt-qemu` to your user name or ID. Once edited it should look something like below. 
+Search for `user = "libvirt-qemu"` or `group = "libvirt-qemu"`, uncomment both entries and change `libvirt-qemu` to your user name or ID. Once edited it should look something like below. <br />
+*You can get your user by this command `echo $USER` or `whoami`, if you want to get user ID use this command `id -u`.*
 ```
 sudo nano /etc/libvirt/qemu.conf
 ```

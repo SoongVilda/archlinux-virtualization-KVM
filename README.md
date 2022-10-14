@@ -3,10 +3,15 @@
 - [Virt-Manager](#virt-manager)
 - [Configuration Virt-Manager](#configuration_virt-manager)
 ## QEMU
-1. https://wiki.archlinux.org/title/QEMU
+```
+sudo pacman -S --needed qemu-desktop
+```
+
+## If you need more architectures
 ```
 sudo pacman -S --needed qemu-full
 ```
+More about [QEMU](https://wiki.archlinux.org/title/QEMU)
 
 ## Virt-Manager
 ```
@@ -15,6 +20,7 @@ sudo pacman -S --needed virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq ipta
 ```
 sudo systemctl enable --now libvirtd.service
 ```
+
 ## Configuration_Virt-Manager
 #### Edit the following configurations:
 ```

@@ -1,6 +1,7 @@
 # Arch Linux virtualization KVM
 - [QEMU](#qemu)
 - [Virt-Manager](#virt-manager)
+- [Configuration Virt-Manager](#configuration_virt-manager)
 ## QEMU
 1. https://wiki.archlinux.org/title/QEMU
 ```
@@ -14,7 +15,7 @@ sudo pacman -S --needed virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq ipta
 ```
 sudo systemctl enable --now libvirtd.service
 ```
-## Configuration Virt-Manager
+## Configuration_Virt-Manager
 #### Edit the following configurations:
 ```
 sudo nano /etc/libvirt/libvirtd.conf
